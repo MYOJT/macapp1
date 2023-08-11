@@ -1,0 +1,154 @@
+body{
+    padding: 0;
+    margin:0;
+    background-color:rgb(214, 206, 206);
+  }
+  ul{
+    list-style: none;
+    padding:0;
+    margin:0;
+  }
+  a{
+    text-decoration:none;
+    color:black;
+  }
+  li a{
+    display:block;
+    width:100%;
+    height:100%;
+  }
+  p{
+    margin:0;
+    padding:0;
+  }
+  h2{
+    padding:0;
+    margin:0;
+  }
+  div{
+    margin:0;
+    padding:0;
+  }
+  
+  /* header */
+  header{
+    z-index:100;
+    width:100%;
+    height:75px;
+    /* background-color:bisque; */
+    position:sticky;
+    top:0px;
+  
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color: aliceblue;
+  
+  }
+  .headerName{
+    font-size:30px;
+    padding-left:40px;
+  }
+  .headerUl{
+    /* padding:15px; */
+    /* border:1px solid black; */
+    display:flex;
+    align-items: center;
+  }
+  .headerLi a{
+    display:block;
+    width:100%;
+    height:100%;
+  }
+  .headerLi{
+    padding:20px 20px 20px 15px;
+    /* border-right:0.5px solid black;   */
+  }
+  .headerLi:hover{
+    background-color:rgb(235, 235, 235);
+    position:relative;
+    right:2px;
+    bottom:2px;
+  }
+  
+  
+  
+  /* ---screen-container--- */
+  .screen-container{
+    width:100%;
+    height:600px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items: center;
+  }
+  #screen-item1{
+    width:400px;
+    height:5%;
+  }
+  #screen-item2{
+    width:60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #title-phrase{
+    font-size:24px;
+    transition:font-size 0.8s;
+    animation-name: biggerH1;
+    animation-duration:2s;
+    animation-delay: 2s;
+  }
+  #title-phrase:hover{
+    font-size: 40px;
+    transition: font-size 1s;
+  }
+  @keyframes biggerH1{
+    0%{
+      font-size: 24px;
+    }
+    60%{
+      font-size:40px;
+    }
+    100%{
+      font-size: 24px;
+    }
+  }
+  
+  
+  
+  
+  /* login.html */
+  .inputText{
+    border:none;
+    margin-top:6px;
+  }
+  
+  #errorMessage{
+    color: red;
+  }
+  
+  #loginButton{
+    border:none;
+    text-align: center;
+    display:inline-block;
+    margin-top: 9px;
+    padding: 3px 12px;
+    font-size: 18px;
+    /*background-color: aquamarine;*/
+  }
+  
+  #loginButton:hover{
+    background-color:black;
+    transition:background-color 0.8s;
+  }
+  #loginButton:hover{
+    color:white;
+    transition:color 0.8s;
+  }
+  
+  /* todo */
+  span{
+    margin-left:20px;
+    margin-right:20px;
+  }

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TODO</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <header>
+    <div class="headerName">MY TODO LIST</div>
+    <ul class="headerUl">
+      <li class="headerLi"><a href="">about us</a></li>
+      <li class="headerLi"><a href="">service</a></li>
+      <li class="headerLi"><a href="">recruit</a></li>
+      <li class="headerLi"><a href="">news</a></li>
+      <li class="headerLi"><a href="">contact</a></li>
+    </ul>
+  </header>
+  <main>
+    <section class="screen-container">
+      <div id="screen-item2">
+        <div id="item">
+          <h1>Login</h1>
+          <form action="/login" method="post" name="loginForm" id="loginForm">
+            <p>ID</p>
+            <input type="text" id="loginId" class="inputText" name="loginId" value="" autocomplete="">
+
+            <p>PASSWORD</p>
+            <input type="password" id="password" class="inputText" name="password" value="" autocomplete="">
+            <br>
+            <input type="Button" value="submit" id="loginButton" onclick="" autocomplete="">
+          </form>
+        </div>
+        <br>
+        <p><a href="">新規登録はこちら</a></p>
+      </div>
+        <div>
+        <h2 id="errorMessage"></h2>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./js/index.js"></script>
+  </main>
+  <footer>
+
+  </footer>
+  </body>
+</html>
