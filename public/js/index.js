@@ -1,11 +1,9 @@
-
+'use strict';
 const loginButton = document.getElementById('loginButton');
 loginButton.addEventListener('click', async (event) => {
   event.preventDefault();
-  const id = document.getElementById('loginId').value; // 修正
-  console.log(id);
+  const id = document.getElementById('loginId').value;
   const password = document.getElementById('password').value;
-  console.log(password);
   
   try {
     const response = await fetch('/login', {
@@ -24,5 +22,4 @@ loginButton.addEventListener('click', async (event) => {
   } catch (error) {
     console.error('通信エラー:', error);
   }
-
 });

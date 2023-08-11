@@ -16,4 +16,3 @@ RUN npm install
 
 # シェルを起動するようにCMDを変更
 CMD bash -c "npm start"
-
