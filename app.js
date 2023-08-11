@@ -17,15 +17,18 @@ app.get('/', function(req, res) {
     res.sendFile('./public/index.html', { root: __dirname });
 });
 
-// ログイン認証を行うエンドポイント
 app.post('/login', (req, res) => {
-    const { id, password } = req.body;
+  const { id, password } = req.body;
 
-    // ここで実際の認証処理を行う
-    // ...
-
-    // 認証成功時にtodo.htmlにリダイレクト
-    res.redirect('/todo.html');
+  // ここで実際の認証処理を行う
+  // 仮の認証処理を例として追加します
+  if (id === 's' && password === 's') {
+    console.log('app.js ログイン成功');
+    res.status(200).json({ message: 'ログイン成功' });
+  } else {
+    console.log('app.js ログイン失敗');
+    res.status(401).json({ message: 'ログイン失敗' });
+  }
 });
 
 // 8080番ポートで待ちうける
