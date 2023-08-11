@@ -11,6 +11,6 @@ RUN apk --no-cache add bash curl postgresql-client
 # アプリケーションの依存パッケージをインストール
 RUN npm install
 
-# コンテナ内でアプリを実行
-CMD ["npm", "start"]
+# シェルを起動するようにCMDを変更
+CMD ["/bin/sh"]
 
