@@ -1,6 +1,7 @@
 # 全削除
 docker images --format "{{.ID}}" | xargs -I {} docker rmi -f {}
 docker ps --format "{{.ID}}" | xargs -I {} docker rmi -f {}
+docker-compose down -v
 docker volume rm $(docker volume ls -q)
 
 # apコンテナのみ削除

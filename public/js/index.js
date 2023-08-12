@@ -2,7 +2,7 @@
 const loginButton = document.getElementById('loginButton');
 loginButton.addEventListener('click', async (event) => {
   event.preventDefault();
-  const id = document.getElementById('loginId').value;
+  const name = document.getElementById('loginId').value;
   const password = document.getElementById('password').value;
   
   try {
@@ -11,7 +11,7 @@ loginButton.addEventListener('click', async (event) => {
       headers: {
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify({ id, password })
+      body: JSON.stringify({ name, password })
     });
 
     if (response.ok) {

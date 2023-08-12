@@ -1,11 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TODO</title>
+  <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
-    todo.js
+  <header>
+    <div class="headerName">MY TODO LIST</div>
+    <ul class="headerUl">
+      <li class="headerLi"><a href="">about us</a></li>
+      <li class="headerLi"><a href="">service</a></li>
+      <li class="headerLi"><a href="">recruit</a></li>
+      <li class="headerLi"><a href="">news</a></li>
+      <li class="headerLi"><a href="">contact</a></li>
+    </ul>
+  </header>
+  <main>
+    <section class="screen-container">
+      <div id="screen-item1">
+        <h1 id="title-phrase">I<span class="bigger">Definitely do.</span></h1>
+      </div>
+      <h3 id="user_id"></h3>
+      <div id="screen-item2">
+        <input type="text" id="newTodo" value=""><br/>
+        <input type="button" id="addTodo" value="OK">
+        <input type="date" id="start_time" value="">
+        <input type="date" id="deadline_time" value="">
+      <table width="100%">
+        <tbody>
+          <tr>
+            <th>開始</th>
+            <th>期限</th>
+            <th>TODO</th>
+            <th>完了</th>
+            <th>削除</th>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    </section>
+    <script src="../js/todo.js"></script>
+  </main>
+  <footer>
+
+  </footer>
 </body>
+
 </html>
