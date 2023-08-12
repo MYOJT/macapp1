@@ -7,17 +7,33 @@
 # | |  |-index.js
 # | |
 # | |-html
-# |  |-todo.html
-# |
+# | ||-todo.html
 # | |
 # | |-index.html
-# | |-todo.html
+# | |
+# | |-db
+# |  |-db.js
+# |
 # |-routes
 # |
 # |-views
 # |
 # |-docker-entrypoint-initdb.d
 # | |-init.sql
+# |
+# |-.env
+# |-Dockerfile
+# |-docker-compose.yml
+# |
+#
+#
+#
+#
+#
+#
+#
+#
+
 
 mkdir public
 mkdir public/css
@@ -30,4 +46,10 @@ touch public/html/todo.html
 mkdir routes
 mkdir views
 mkdir docker-entrypoint-initdb.d
-touch docker-entrypoint-initdb.d/init.d
+touch docker-entrypoint-initdb.d/init.sql
+chmod 755 docker-entrypoint-initdb.d/init.sql
+touch Dockerfile
+touch docker-compose.yml
+touch .env
+
+
