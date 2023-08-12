@@ -12,3 +12,5 @@ curl -X POST -H "Content-Type: application/json" -d '{"name":"s", "password":"s"
 psql -U postgres
 \c posdb
 sqlは末尾の;は必須。
+select * from todos;
+select * from users;

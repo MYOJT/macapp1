@@ -75,7 +75,7 @@ app.post('/api/updateTodoStatus', async (req, res) => {
   const { todoValue, is_finish } = req.body;
 
   try {
-      await db.updateTodoStatus(todoValue, is_finish);
+      await db.updateTodoStatusWithTime(todoValue, is_finish);
       res.json({ success: true });
   } catch (error) {
       console.error(error);
